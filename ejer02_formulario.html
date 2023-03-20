@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Marta Alvarado</title>
+
+    <style>
+h1{
+
+text-align:justify;
+text-transform:uppercase;
+font-size: 2em;
+text-shadow: 3px 0px 6px rgb(55, 17, 17);
+color:#ffffff;
+}
+body{
+
+display:flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(27deg, rgb(115, 94, 153) 50%,
+rgb(55, 24, 113) 50%);
+color:bisque;
+font-size: 1.5em;
+ }
+input{
+
+  display: block;  
+  margin: auto;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+ border: 1px solid black;
+}
+p{
+    text-align: center;
+}
+    </style>   
+</head>
+<body>
+     <!-- Encabezado --> 
+     
+     <a href="ejer01_hojaVida.html"><p>Volver atrás... </p></a>
+
+     <h1>Formulario de Contacto</h1>
+    <!-- Formulario de contacto -->
+    <form action="alert('SE HA ENVIODO SU TRABAJO')">
+        <p>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" name="txtNombre" id="txtNombre" maxlength="50" required>
+        </p>
+
+        <p>
+            <label for="txtApellidos">Apellidos</label>
+            <input type="text" name="txtApellidos" id="txtApellidos" maxlength="50" required>
+        </p>
+
+        <p>
+            <label for="txtCorreo">Correo electronico</label>
+            <input type="email" name="txtCorreo" id="txtCorreo" maxlength="128" required>
+        </p>
+
+        <p>
+            <label for="txtTelefono">Teléfono / Celular</label>
+            <input type="tel" name="txtTelefono" id="txtTelefono" minlength="7" maxlength="13" required>
+        </p>
+
+        <p>
+            <label for="optAsunto">Asunto</label>
+            <select name="optAsunto" id="optAsunto" required>
+                <option value>Seleccione una opción...</option>
+                <option value="oferta_empleo">Oferta de empleo</option>
+                <option value="aseosria_consulta">Asesoria o consultas</option>
+                <option value="talleres_ponencia">Talleres y ponencias</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="txtCuerpo">Cuerpo de mensaje</label> <br>
+            <textarea name="txtCuerpo" id="txtCuerpo" cols="30" rows="10" required></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="chbContacto" id="chbContacto" value="0" required>
+            <label for="chbContacto">Acepta que Marta Alvarado pueda ponerse en contacto con usted.</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+</html>
